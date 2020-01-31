@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Котики</title>
+    </head>
+    <body>
+        {% for cat in cats %}
+            <img src="{{ cat['path'] }}" alt="{{ cat['title'] }}">
+            <p>{{ cat['description'] }}</p>
+        {% endfor %}
+    </body>
+</html>
